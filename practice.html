@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starbucks</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<script defer src="js/practice.js"></script>
+
+<style>
+    body {
+        height: 2000px;
+        background-color: rgb(111, 124, 116);
+    }
+
+    img {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 1100px;
+        position: fixed;
+    }
+
+    .inner {
+        width: inherit;
+        background-color: #333;
+        position: relative;
+    }
+
+    .menu-container .logo {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+
+    .menu-container .menu-upper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 40px;
+        padding-right: 20px;
+    }
+
+    .menu-container .menu-upper .menu {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    .menu-container .menu-upper .menu li {}
+
+    .menu-container .menu-upper .menu li::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: #fff;
+
+    }
+
+    .menu-container .menu-upper .menu li:first-child::before {
+        display: none;
+    }
+
+    .menu-container .menu-upper .menu li a {
+        color: #fff;
+        font-size: 11px;
+
+        top: 0;
+        bottom: 0;
+        margin: auto 20px;
+    }
+
+    .menu-container .menu-upper .search {
+        display: block;
+        position: relative;
+
+        height: 25px;
+
+    }
+
+    .menu-container .menu-upper .search .search_bar {
+        width: 50px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    .menu-container .menu-upper .search .search_bar.show {
+        width: 120px;
+    }
+
+    .menu-container .menu-upper .search .material-icons {
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-size: 24px;
+        position: absolute;
+        color: #333;
+    }
+
+    .menu-container .menu-lower .menu {
+
+        display: flex;
+        height: 80px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-container .menu-lower .menu li {
+
+        display: flex;
+        align-items: center;
+        height: 80px;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: .4s;
+    }
+
+    .menu-container .menu-lower .menu li:hover {
+        background-color: #fff;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .menu-container .menu-lower .menu li a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+    .menu-container .menu-lower .menu li:hover a {
+        color: #333;
+    }
+
+    .menu-container .menu-lower .menu li .menu-container {
+        display: none;
+    }
+
+    .menu-container .menu-lower .menu li:hover .menu-container {
+        display: block;
+        position: fixed;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+
+    }
+
+    .menu-container .menu-lower .menu li .menu-container .text-group {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-container .menu-lower .menu li .menu-container .text-group .text {
+        margin: 20px 50px;
+        color: #333;
+        font-size: 12px;
+        line-height: 30px;
+        top: 20px;
+
+    }
+
+    .visual {
+        height: 400px;
+    }
+    .visual .inner {
+        height: 400px;
+    }
+    .visual .visual-box {
+        height: 400px;
+    }
+
+    .visual .visual-box .visual-cup1 {
+    }
+</style>
+
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./images/starbucks_logo.png" alt="" class="logo icon">
+                </div>
+                <div class="menu-upper">
+                    <ul class="menu">
+                        <li>
+                            <a href="" class="">Sign in</a>
+                        </li>
+                        <li>
+                            <a href="" class="">My starbucks</a>
+                        </li>
+                        <li>
+                            <a href="" class="">Customer Service & Ideas</a>
+                        </li>
+                        <li>
+                            <a href="" class="">Find a Store</a>
+                        </li>
+
+                    </ul>
+                    <div class="search">
+                        <input class="search_bar"></input>
+                        <div class="material-icons">
+                            search
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-lower">
+                    <ul class="menu">
+                        <li>
+                            COFFEE
+                            <div class="menu-container">
+                                <div class="text-group">
+                                    <ul class="text">
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                    </ul>
+                                    <ul class="text">
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                    </ul>
+                                    <ul class="text">
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                    </ul>
+                                    <ul class="text">
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                        <h2>starbucks</h2>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="">MENU</a>
+                        </li>
+                        <li>
+                            <a href="" class="">STORE</a>
+                        </li>
+                        <li>
+                            <a href="" class="">RESPONSIBILITY</a>
+                        </li>
+                        <li>
+                            <a href="" class="">MY STARBUCKS REWARDS</a>
+                        </li>
+                        <li>
+                            <a href="" class="">WHAT'S NEW</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <section class="visual">
+        <div class="inner">
+            <div class="visual-box">
+                <img src="./images/visual_title.png" alt="">
+
+            </div>
+            <img src="./images/visual_cup1.png" class="visual-cup1" alt="">
+            <img src="./images/visual_cup1_text.png" alt="">
+            <img src="./images/visual_cup2.png" alt="">
+            <img src="./images/visual_cup2_text.png" alt="">
+            <img src="./images/visual_cup2.png" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
